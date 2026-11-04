@@ -1,0 +1,40 @@
+{
+  "item_id": "shieldrpg:blaze_shield",
+  "name": "Blaze Shield",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.blaze_shield.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 48,
+    "regen_per_second": 8,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 64
+  },
+  "stats": {
+    "armor": 5
+  },
+  "skills": [
+    {
+      "trigger": "blocked_melee",
+      "cooldown_ticks": 100,
+      "action": "shieldrpg:ignite",
+      "target": "attacker_melee",
+      "max_range": 5,
+      "params": {
+        "seconds": 5
+      },
+      "particle": {
+        "type": "minecraft:flame",
+        "count": 30,
+        "spread": 0.5,
+        "speed": 0.05
+      },
+      "sound": {
+        "id": "minecraft:item.firecharge.use",
+        "volume": 0.7,
+        "pitch": 1.0
+      },
+      "text_key": "tooltip.shieldrpg.blaze_shield.skill.scorch"
+    }
+  ]
+}

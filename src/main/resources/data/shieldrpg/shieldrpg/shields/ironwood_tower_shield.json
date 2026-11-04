@@ -1,0 +1,41 @@
+{
+  "item_id": "shieldrpg:ironwood_tower_shield",
+  "name": "Ironwood Tower Shield",
+  "name_gradient": [
+    "#9B59B6",
+    "#D7BDE2"
+  ],
+  "tier": "epic",
+  "lore_key": "tooltip.shieldrpg.ironwood_tower_shield.lore.1",
+  "durability": 495,
+  "guard": {
+    "max_stability": 132,
+    "regen_per_second": 6,
+    "hold_drain_per_second": 7,
+    "damage_reduction_percent": 85,
+    "projectile_damage_reduction_percent": 100,
+    "raised_move_speed": -0.15
+  },
+  "perfect_guard": {
+    "knockback": 0.8
+  },
+  "stats": {
+    "armor": 12,
+    "knockback_resist": 0.25,
+    "move_speed": -0.05
+  },
+  "skills": [
+    {
+      "trigger": "blocked_projectile",
+      "action": "shieldrpg:reflect_projectile",
+      "target": "self",
+      "text_key": "tooltip.shieldrpg.ironwood_tower_shield.skill",
+      "particle": {
+        "type": "minecraft:crit",
+        "count": 18,
+        "spread": 0.6,
+        "speed": 0.25
+      }
+    }
+  ]
+}

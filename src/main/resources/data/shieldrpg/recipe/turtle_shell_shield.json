@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "SSS",
+    "SIS",
+    " S "
+  ],
+  "key": {
+    "S": "minecraft:turtle_scute",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "shieldrpg:turtle_shell_shield",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:turtle_shell_shield"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "item_id": "shieldrpg:golden_apple_shield",
+  "name": "Golden Apple Shield",
+  "name_gradient": [
+    "#9B59B6",
+    "#D7BDE2"
+  ],
+  "tier": "epic",
+  "lore_key": "tooltip.shieldrpg.golden_apple_shield.lore.1",
+  "durability": 495,
+  "guard": {
+    "max_stability": 66,
+    "regen_per_second": 7.2,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 70,
+    "raised_move_speed": -0.05
+  },
+  "stats": {
+    "armor": 9,
+    "max_health": 4
+  },
+  "skills": [
+    {
+      "trigger": "guard_recovered",
+      "cooldown_ticks": 900,
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:health_boost",
+        "duration_ticks": 400,
+        "amplifier": 1
+      },
+      "particle": {
+        "type": "minecraft:happy_villager",
+        "count": 30,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "sound": {
+        "id": "minecraft:entity.player.levelup",
+        "volume": 0.6,
+        "pitch": 1.2
+      },
+      "text_key": "tooltip.shieldrpg.golden_apple_shield.skill.golden_vigor"
+    }
+  ]
+}

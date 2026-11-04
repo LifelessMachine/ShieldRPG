@@ -1,0 +1,38 @@
+{
+  "item_id": "shieldrpg:wooden_buckler",
+  "name": "Wooden Buckler",
+  "tier": "common",
+  "lore_key": "tooltip.shieldrpg.wooden_buckler.lore.1",
+  "durability": 212,
+  "guard": {
+    "max_stability": 27,
+    "regen_per_second": 8.8,
+    "hold_drain_per_second": 3,
+    "damage_reduction_percent": 50,
+    "raised_move_speed": 0.2
+  },
+  "stats": {
+    "armor": 2,
+    "move_speed": 0.06
+  },
+  "skills": [
+    {
+      "trigger": "perfect_guard",
+      "cooldown_ticks": 100,
+      "action": "shieldrpg:apply_effect",
+      "target": "attacker_melee",
+      "params": {
+        "effect": "minecraft:glowing",
+        "duration_ticks": 160,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:end_rod",
+        "count": 24,
+        "spread": 0.5,
+        "speed": 0.05
+      },
+      "text_key": "tooltip.shieldrpg.wooden_buckler.skill.tell_tale"
+    }
+  ]
+}

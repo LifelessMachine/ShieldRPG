@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:oak_door",
+    "minecraft:iron_nugget",
+    "minecraft:iron_nugget"
+  ],
+  "result": {
+    "id": "shieldrpg:tavern_door",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:tavern_door"
+    }
+  ]
+}

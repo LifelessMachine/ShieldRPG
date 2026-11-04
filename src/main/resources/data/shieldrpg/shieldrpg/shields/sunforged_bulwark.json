@@ -1,0 +1,66 @@
+{
+  "item_id": "shieldrpg:sunforged_bulwark",
+  "name": "Sunforged Bulwark",
+  "name_gradient": [
+    "#9B59B6",
+    "#D7BDE2"
+  ],
+  "tier": "epic",
+  "lore_key": "tooltip.shieldrpg.sunforged_bulwark.lore.1",
+  "durability": 495,
+  "guard": {
+    "max_stability": 53,
+    "regen_per_second": 6.4,
+    "hold_drain_per_second": 6,
+    "damage_reduction_percent": 92,
+    "raised_move_speed": -0.22
+  },
+  "stats": {
+    "armor": 13,
+    "max_health": 4,
+    "move_speed": -0.08
+  },
+  "skills": [
+    {
+      "trigger": "stability_low",
+      "threshold": 0.3,
+      "cooldown_ticks": 1200,
+      "steps": [
+        {
+          "action": "shieldrpg:heal",
+          "target": "self",
+          "params": {
+            "percent_max_health": 20
+          },
+          "particle": {
+            "type": "minecraft:happy_villager",
+            "count": 36,
+            "spread": 0.6,
+            "speed": 0.1
+          }
+        },
+        {
+          "action": "shieldrpg:apply_effect",
+          "target": "self",
+          "params": {
+            "effect": "minecraft:absorption",
+            "duration_ticks": 200,
+            "amplifier": 0
+          },
+          "particle": {
+            "type": "minecraft:end_rod",
+            "count": 24,
+            "spread": 0.5,
+            "speed": 0.05
+          }
+        }
+      ],
+      "sound": {
+        "id": "minecraft:block.beacon.activate",
+        "volume": 0.8,
+        "pitch": 1.4
+      },
+      "text_key": "tooltip.shieldrpg.sunforged_bulwark.skill.second_wind"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "DID",
+    "IPI",
+    "DID"
+  ],
+  "key": {
+    "D": "minecraft:pointed_dripstone",
+    "I": "minecraft:iron_ingot",
+    "P": "#minecraft:planks"
+  },
+  "result": {
+    "id": "shieldrpg:thornback_scutum",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:thornback_scutum"
+    }
+  ]
+}

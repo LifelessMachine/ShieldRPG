@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "RTR",
+    "RVR"
+  ],
+  "key": {
+    "R": "minecraft:blaze_rod",
+    "T": "minecraft:totem_of_undying",
+    "V": [
+      "minecraft:shield",
+      "shieldrpg:standard_shield"
+    ]
+  },
+  "result": {
+    "id": "shieldrpg:phoenix_heart_shield",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:phoenix_heart_shield"
+    }
+  ]
+}

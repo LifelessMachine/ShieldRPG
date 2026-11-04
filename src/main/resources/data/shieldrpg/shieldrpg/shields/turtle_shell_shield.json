@@ -1,0 +1,44 @@
+{
+  "item_id": "shieldrpg:turtle_shell_shield",
+  "name": "Turtle Shell Shield",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.turtle_shell_shield.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 50,
+    "regen_per_second": 6.4,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 100,
+    "raised_move_speed": -0.3
+  },
+  "stats": {
+    "armor": 8,
+    "knockback_resist": 0.2
+  },
+  "skills": [
+    {
+      "trigger": "stability_low",
+      "threshold": 0.3,
+      "cooldown_ticks": 1200,
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:resistance",
+        "duration_ticks": 100,
+        "amplifier": 2
+      },
+      "particle": {
+        "type": "minecraft:happy_villager",
+        "count": 30,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "sound": {
+        "id": "minecraft:item.armor.equip_turtle",
+        "volume": 1.0,
+        "pitch": 0.9
+      },
+      "text_key": "tooltip.shieldrpg.turtle_shell_shield.skill.turtle_up"
+    }
+  ]
+}

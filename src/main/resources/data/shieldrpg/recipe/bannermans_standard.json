@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "WWW",
+    "WIW",
+    " S "
+  ],
+  "key": {
+    "W": "minecraft:white_wool",
+    "I": "minecraft:iron_ingot",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "shieldrpg:bannermans_standard",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:bannermans_standard"
+    }
+  ]
+}

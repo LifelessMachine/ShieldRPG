@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "SSS",
+    "STS",
+    "SSS"
+  ],
+  "key": {
+    "S": "minecraft:stick",
+    "T": "minecraft:string"
+  },
+  "result": {
+    "id": "shieldrpg:wicker_oval",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:wicker_oval"
+    }
+  ]
+}

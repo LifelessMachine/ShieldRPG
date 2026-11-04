@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "RBR",
+    "III",
+    " I "
+  ],
+  "key": {
+    "R": "minecraft:blaze_rod",
+    "B": "minecraft:blaze_powder",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "shieldrpg:blaze_shield",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:blaze_shield"
+    }
+  ]
+}

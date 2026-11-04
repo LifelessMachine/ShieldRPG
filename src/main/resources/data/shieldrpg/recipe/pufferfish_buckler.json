@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "PFP",
+    "PPP",
+    " P "
+  ],
+  "key": {
+    "P": "#minecraft:planks",
+    "F": "minecraft:pufferfish"
+  },
+  "result": {
+    "id": "shieldrpg:pufferfish_buckler",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:pufferfish_buckler"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "item_id": "shieldrpg:tavern_door",
+  "name": "Tavern Door",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.tavern_door.lore.1",
+  "durability": 300,
+  "guard": {
+    "max_stability": 48,
+    "regen_per_second": 7.2,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 72,
+    "raised_move_speed": -0.05
+  },
+  "perfect_guard": {
+    "knockback": 1.2
+  },
+  "stats": {
+    "armor": 5
+  },
+  "skills": [
+    {
+      "trigger": "perfect_guard",
+      "cooldown_ticks": 160,
+      "action": "shieldrpg:knockback",
+      "target": "nearby",
+      "params": {
+        "strength": 2.5
+      },
+      "particle": {
+        "type": "minecraft:cloud",
+        "count": 30,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "sound": {
+        "id": "minecraft:block.wooden_door.close",
+        "volume": 1.0,
+        "pitch": 0.8
+      },
+      "text_key": "tooltip.shieldrpg.tavern_door.skill.bouncer"
+    }
+  ]
+}

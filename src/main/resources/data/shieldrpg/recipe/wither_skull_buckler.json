@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "OSO",
+    "OOO",
+    " O "
+  ],
+  "key": {
+    "O": "minecraft:obsidian",
+    "S": "minecraft:wither_skeleton_skull"
+  },
+  "result": {
+    "id": "shieldrpg:wither_skull_buckler",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:wither_skull_buckler"
+    }
+  ]
+}

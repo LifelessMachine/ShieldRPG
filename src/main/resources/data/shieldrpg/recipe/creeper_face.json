@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "GGG",
+    "GHG",
+    " I "
+  ],
+  "key": {
+    "G": "minecraft:gunpowder",
+    "H": "minecraft:creeper_head",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "shieldrpg:creeper_face",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:creeper_face"
+    }
+  ]
+}

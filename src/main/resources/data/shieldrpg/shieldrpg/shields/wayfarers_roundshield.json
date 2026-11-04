@@ -1,0 +1,38 @@
+{
+  "item_id": "shieldrpg:wayfarers_roundshield",
+  "name": "Wayfarer's Roundshield",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.wayfarers_roundshield.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 40,
+    "regen_per_second": 8.8,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 58,
+    "raised_move_speed": 0.1
+  },
+  "stats": {
+    "armor": 4,
+    "move_speed": 0.02
+  },
+  "skills": [
+    {
+      "trigger": "shield_equipped",
+      "cooldown_ticks": 600,
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:speed",
+        "duration_ticks": 200,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:cloud",
+        "count": 18,
+        "spread": 0.5,
+        "speed": 0.05
+      },
+      "text_key": "tooltip.shieldrpg.wayfarers_roundshield.skill.ready_to_march"
+    }
+  ]
+}

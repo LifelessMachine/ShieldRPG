@@ -1,0 +1,37 @@
+{
+  "item_id": "shieldrpg:forge_twins_roundel",
+  "name": "Forge Twins Roundel",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.forge_twins_roundel.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 48,
+    "regen_per_second": 8,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 60,
+    "raised_move_speed": 0.05
+  },
+  "stats": {
+    "armor": 5
+  },
+  "skills": [
+    {
+      "trigger": "stability_full",
+      "cooldown_ticks": 1200,
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:fire_resistance",
+        "duration_ticks": 300,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:flame",
+        "count": 30,
+        "spread": 0.6,
+        "speed": 0.05
+      },
+      "text_key": "tooltip.shieldrpg.forge_twins_roundel.skill.heat_ward"
+    }
+  ]
+}

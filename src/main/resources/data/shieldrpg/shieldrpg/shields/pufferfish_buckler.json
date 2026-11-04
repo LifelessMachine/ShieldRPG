@@ -1,0 +1,39 @@
+{
+  "item_id": "shieldrpg:pufferfish_buckler",
+  "name": "Pufferfish Buckler",
+  "tier": "common",
+  "lore_key": "tooltip.shieldrpg.pufferfish_buckler.lore.1",
+  "durability": 238,
+  "guard": {
+    "max_stability": 30,
+    "regen_per_second": 8.8,
+    "hold_drain_per_second": 3,
+    "damage_reduction_percent": 52,
+    "raised_move_speed": 0.12
+  },
+  "stats": {
+    "armor": 3,
+    "move_speed": 0.03
+  },
+  "skills": [
+    {
+      "trigger": "blocked_melee",
+      "cooldown_ticks": 100,
+      "action": "shieldrpg:apply_effect",
+      "target": "attacker_melee",
+      "max_range": 5,
+      "params": {
+        "effect": "minecraft:poison",
+        "duration_ticks": 100,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:item_slime",
+        "count": 24,
+        "spread": 0.5,
+        "speed": 0.1
+      },
+      "text_key": "tooltip.shieldrpg.pufferfish_buckler.skill.toxic_spines"
+    }
+  ]
+}

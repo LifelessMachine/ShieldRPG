@@ -1,0 +1,37 @@
+{
+  "item_id": "shieldrpg:prismarine_shield",
+  "name": "Prismarine Shield",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.prismarine_shield.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 52,
+    "regen_per_second": 7.6,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 62
+  },
+  "stats": {
+    "armor": 5,
+    "move_speed": 0.02
+  },
+  "skills": [
+    {
+      "trigger": "shield_unequipped",
+      "cooldown_ticks": 600,
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:dolphins_grace",
+        "duration_ticks": 200,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:bubble",
+        "count": 36,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "text_key": "tooltip.shieldrpg.prismarine_shield.skill.sea_legs"
+    }
+  ]
+}

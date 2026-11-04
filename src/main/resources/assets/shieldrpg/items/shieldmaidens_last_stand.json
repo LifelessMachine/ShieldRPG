@@ -1,0 +1,14 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:using_item",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "shieldrpg:item/shieldmaidens_last_stand"
+    },
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "shieldrpg:item/shieldmaidens_last_stand_blocking"
+    }
+  }
+}

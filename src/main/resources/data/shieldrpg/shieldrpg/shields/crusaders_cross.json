@@ -1,0 +1,35 @@
+{
+  "item_id": "shieldrpg:crusaders_cross",
+  "name": "Crusader's Cross",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.crusaders_cross.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 56,
+    "regen_per_second": 7.6,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 68,
+    "raised_move_speed": -0.05
+  },
+  "stats": {
+    "armor": 6
+  },
+  "skills": [
+    {
+      "trigger": "hit_unblocked",
+      "cooldown_ticks": 400,
+      "action": "shieldrpg:heal",
+      "target": "self",
+      "params": {
+        "amount": 4
+      },
+      "particle": {
+        "type": "minecraft:heart",
+        "count": 15,
+        "spread": 0.6,
+        "speed": 0.05
+      },
+      "text_key": "tooltip.shieldrpg.crusaders_cross.skill.mend"
+    }
+  ]
+}

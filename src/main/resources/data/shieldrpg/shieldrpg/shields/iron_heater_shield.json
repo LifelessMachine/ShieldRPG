@@ -1,0 +1,35 @@
+{
+  "item_id": "shieldrpg:iron_heater_shield",
+  "name": "Iron Heater Shield",
+  "tier": "common",
+  "lore_key": "tooltip.shieldrpg.iron_heater_shield.lore.1",
+  "durability": 238,
+  "guard": {
+    "max_stability": 46,
+    "regen_per_second": 8,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 65,
+    "projectile_damage_reduction_percent": 80
+  },
+  "stats": {
+    "armor": 5
+  },
+  "skills": [
+    {
+      "trigger": "shield_bash",
+      "cooldown_ticks": 60,
+      "action": "shieldrpg:knockback",
+      "target": "attacker",
+      "params": {
+        "strength": 2.2
+      },
+      "particle": {
+        "type": "minecraft:poof",
+        "count": 24,
+        "spread": 0.5,
+        "speed": 0.1
+      },
+      "text_key": "tooltip.shieldrpg.iron_heater_shield.skill.iron_shove"
+    }
+  ]
+}

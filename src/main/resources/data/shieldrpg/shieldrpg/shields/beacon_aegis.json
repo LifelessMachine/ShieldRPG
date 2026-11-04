@@ -1,0 +1,40 @@
+{
+  "item_id": "shieldrpg:beacon_aegis",
+  "name": "Beacon Aegis",
+  "name_gradient": [
+    "#F5B041",
+    "#FDEBD0"
+  ],
+  "tier": "legendary",
+  "lore_key": "tooltip.shieldrpg.beacon_aegis.lore.1",
+  "durability": 720,
+  "guard": {
+    "max_stability": 125,
+    "regen_per_second": 7.2,
+    "hold_drain_per_second": 6,
+    "damage_reduction_percent": 80,
+    "raised_move_speed": -0.15
+  },
+  "stats": {
+    "armor": 12,
+    "max_health": 10
+  },
+  "skills": [
+    {
+      "trigger": "shieldrpg:perfect_combo",
+      "cooldown_ticks": 100,
+      "action": "shieldrpg:beam",
+      "target": "attacker",
+      "max_range": 24,
+      "params": {
+        "amount": 20
+      },
+      "sound": {
+        "id": "minecraft:block.beacon.power_select",
+        "volume": 0.9,
+        "pitch": 1.6
+      },
+      "text_key": "tooltip.shieldrpg.beacon_aegis.skill.beacon_beam"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "item_id": "shieldrpg:wellspring_bulwark",
+  "name": "Wellspring Bulwark",
+  "name_gradient": [
+    "#9B59B6",
+    "#D7BDE2"
+  ],
+  "tier": "epic",
+  "lore_key": "tooltip.shieldrpg.wellspring_bulwark.lore.1",
+  "durability": 495,
+  "guard": {
+    "max_stability": 97,
+    "regen_per_second": 7.6,
+    "hold_drain_per_second": 6,
+    "damage_reduction_percent": 75,
+    "raised_move_speed": -0.1
+  },
+  "stats": {
+    "armor": 10,
+    "max_health": 2
+  },
+  "skills": [
+    {
+      "trigger": "stability_full",
+      "cooldown_ticks": 400,
+      "action": "shieldrpg:heal",
+      "target": "self",
+      "params": {
+        "percent_max_health": 5
+      },
+      "particle": {
+        "type": "minecraft:happy_villager",
+        "count": 18,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "text_key": "tooltip.shieldrpg.wellspring_bulwark.skill.full_charge"
+    }
+  ]
+}

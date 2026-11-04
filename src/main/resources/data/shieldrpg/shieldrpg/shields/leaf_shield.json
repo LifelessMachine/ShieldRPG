@@ -1,0 +1,38 @@
+{
+  "item_id": "shieldrpg:leaf_shield",
+  "name": "Leaf Shield",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.leaf_shield.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 42,
+    "regen_per_second": 9.2,
+    "hold_drain_per_second": 3,
+    "damage_reduction_percent": 56,
+    "raised_move_speed": 0.1
+  },
+  "stats": {
+    "armor": 4,
+    "move_speed": 0.03
+  },
+  "skills": [
+    {
+      "trigger": "perfect_guard",
+      "cooldown_ticks": 300,
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:regeneration",
+        "duration_ticks": 100,
+        "amplifier": 1
+      },
+      "particle": {
+        "type": "minecraft:happy_villager",
+        "count": 24,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "text_key": "tooltip.shieldrpg.leaf_shield.skill.verdant_pulse"
+    }
+  ]
+}

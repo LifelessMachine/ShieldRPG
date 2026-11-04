@@ -1,0 +1,42 @@
+{
+  "item_id": "shieldrpg:svalinn_frost_oak_shield",
+  "name": "Svalinn Frost Oak Shield",
+  "name_gradient": [
+    "#5DADE2",
+    "#AED6F1"
+  ],
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.svalinn_frost_oak_shield.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 64,
+    "regen_per_second": 8,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 65
+  },
+  "perfect_guard": {
+    "knockback": 0.5
+  },
+  "stats": {
+    "armor": 7
+  },
+  "skills": [
+    {
+      "trigger": "blocked_hit",
+      "action": "shieldrpg:apply_effect",
+      "target": "attacker",
+      "params": {
+        "effect": "minecraft:slowness",
+        "duration_ticks": 40,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:snowflake",
+        "count": 24,
+        "spread": 0.6,
+        "speed": 0.08
+      },
+      "text_key": "tooltip.shieldrpg.svalinn_frost_oak_shield.skill"
+    }
+  ]
+}

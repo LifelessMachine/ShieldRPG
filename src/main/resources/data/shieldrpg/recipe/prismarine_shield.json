@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "PCP",
+    "PIP",
+    " I "
+  ],
+  "key": {
+    "P": "minecraft:prismarine_shard",
+    "C": "minecraft:prismarine_crystals",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "shieldrpg:prismarine_shield",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:prismarine_shield"
+    }
+  ]
+}

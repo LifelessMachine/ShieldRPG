@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "IDI",
+    "PIP",
+    " I "
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "D": "minecraft:diamond",
+    "P": "#minecraft:planks"
+  },
+  "result": {
+    "id": "shieldrpg:ironwood_tower_shield",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:ironwood_tower_shield"
+    }
+  ]
+}

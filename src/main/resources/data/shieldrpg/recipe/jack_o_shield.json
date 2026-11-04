@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "PCP",
+    "PPP",
+    " T "
+  ],
+  "key": {
+    "P": "#minecraft:planks",
+    "C": "minecraft:carved_pumpkin",
+    "T": "minecraft:torch"
+  },
+  "result": {
+    "id": "shieldrpg:jack_o_shield",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:jack_o_shield"
+    }
+  ]
+}

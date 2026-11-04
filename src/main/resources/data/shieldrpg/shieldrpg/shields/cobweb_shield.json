@@ -1,0 +1,36 @@
+{
+  "item_id": "shieldrpg:cobweb_shield",
+  "name": "Cobweb Shield",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.cobweb_shield.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 36,
+    "regen_per_second": 8.8,
+    "hold_drain_per_second": 3,
+    "damage_reduction_percent": 54,
+    "raised_move_speed": 0.1
+  },
+  "stats": {
+    "armor": 3
+  },
+  "skills": [
+    {
+      "trigger": "blocked_projectile",
+      "cooldown_ticks": 160,
+      "action": "shieldrpg:pull",
+      "target": "attacker",
+      "max_range": 24,
+      "params": {
+        "strength": 1.6
+      },
+      "particle": {
+        "type": "minecraft:cloud",
+        "count": 24,
+        "spread": 0.5,
+        "speed": 0.05
+      },
+      "text_key": "tooltip.shieldrpg.cobweb_shield.skill.reel_in"
+    }
+  ]
+}

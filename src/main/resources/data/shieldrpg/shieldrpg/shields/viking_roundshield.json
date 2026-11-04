@@ -1,0 +1,40 @@
+{
+  "item_id": "shieldrpg:viking_roundshield",
+  "name": "Viking Roundshield",
+  "name_gradient": [
+    "#8A929A",
+    "#CCD1D9"
+  ],
+  "tier": "common",
+  "lore_key": "tooltip.shieldrpg.viking_roundshield.lore.1",
+  "durability": 238,
+  "guard": {
+    "max_stability": 38,
+    "regen_per_second": 10,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 55,
+    "raised_move_speed": 0.1
+  },
+  "perfect_guard": {
+    "knockback": 0.5
+  },
+  "stats": {
+    "armor": 4
+  },
+  "skills": [
+    {
+      "trigger": "perfect_guard",
+      "action": "shieldrpg:damage",
+      "target": "attacker_melee",
+      "params": {
+        "amount": 20
+      },
+      "particle": {
+        "type": "minecraft:sweep_attack",
+        "count": 3,
+        "spread": 0.8
+      },
+      "text_key": "tooltip.shieldrpg.viking_roundshield.skill"
+    }
+  ]
+}

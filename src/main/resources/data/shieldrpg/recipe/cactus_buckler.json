@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "CCC",
+    "CSC",
+    " C "
+  ],
+  "key": {
+    "C": "minecraft:cactus",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "shieldrpg:cactus_buckler",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:cactus_buckler"
+    }
+  ]
+}

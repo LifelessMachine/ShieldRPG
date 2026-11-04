@@ -1,0 +1,38 @@
+{
+  "item_id": "shieldrpg:barrel_lid",
+  "name": "Barrel Lid",
+  "tier": "common",
+  "lore_key": "tooltip.shieldrpg.barrel_lid.lore.1",
+  "durability": 150,
+  "guard": {
+    "max_stability": 20,
+    "regen_per_second": 9.6,
+    "hold_drain_per_second": 3,
+    "damage_reduction_percent": 50,
+    "raised_move_speed": 0.15
+  },
+  "stats": {
+    "armor": 2,
+    "move_speed": 0.04
+  },
+  "skills": [
+    {
+      "trigger": "blocked_projectile",
+      "cooldown_ticks": 300,
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:saturation",
+        "duration_ticks": 20,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:happy_villager",
+        "count": 18,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "text_key": "tooltip.shieldrpg.barrel_lid.skill.snack_break"
+    }
+  ]
+}

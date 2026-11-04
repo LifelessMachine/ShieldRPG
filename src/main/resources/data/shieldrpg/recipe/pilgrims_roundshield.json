@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "LNL",
+    "PPP",
+    " P "
+  ],
+  "key": {
+    "L": "minecraft:leather",
+    "N": "minecraft:lead",
+    "P": "#minecraft:planks"
+  },
+  "result": {
+    "id": "shieldrpg:pilgrims_roundshield",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:pilgrims_roundshield"
+    }
+  ]
+}

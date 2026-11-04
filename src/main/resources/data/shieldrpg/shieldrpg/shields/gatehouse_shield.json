@@ -1,0 +1,56 @@
+{
+  "item_id": "shieldrpg:gatehouse_shield",
+  "name": "Gatehouse Shield",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.gatehouse_shield.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 40,
+    "regen_per_second": 7.2,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 88,
+    "raised_move_speed": -0.2
+  },
+  "stats": {
+    "armor": 6
+  },
+  "skills": [
+    {
+      "trigger": "stability_low",
+      "cooldown_ticks": 500,
+      "steps": [
+        {
+          "action": "shieldrpg:knockback",
+          "target": "nearby",
+          "radius": 4,
+          "params": {
+            "strength": 1.2
+          },
+          "particle": {
+            "type": "minecraft:poof",
+            "count": 24,
+            "spread": 0.5,
+            "speed": 0.1
+          }
+        },
+        {
+          "action": "shieldrpg:apply_effect",
+          "target": "nearby",
+          "radius": 4,
+          "params": {
+            "effect": "minecraft:slowness",
+            "duration_ticks": 80,
+            "amplifier": 1
+          },
+          "particle": {
+            "type": "minecraft:smoke",
+            "count": 16,
+            "spread": 0.5,
+            "speed": 0.05
+          }
+        }
+      ],
+      "text_key": "tooltip.shieldrpg.gatehouse_shield.skill.hold_the_gate"
+    }
+  ]
+}

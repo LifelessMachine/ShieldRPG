@@ -1,0 +1,36 @@
+{
+  "item_id": "shieldrpg:wicker_oval",
+  "name": "Wicker Oval",
+  "tier": "common",
+  "lore_key": "tooltip.shieldrpg.wicker_oval.lore.1",
+  "durability": 212,
+  "guard": {
+    "max_stability": 32,
+    "regen_per_second": 8.8,
+    "hold_drain_per_second": 3,
+    "damage_reduction_percent": 52,
+    "raised_move_speed": 0.15
+  },
+  "stats": {
+    "armor": 3,
+    "move_speed": 0.03
+  },
+  "skills": [
+    {
+      "trigger": "blocked_projectile",
+      "cooldown_ticks": 100,
+      "action": "shieldrpg:heal",
+      "target": "self",
+      "params": {
+        "amount": 2
+      },
+      "particle": {
+        "type": "minecraft:happy_villager",
+        "count": 18,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "text_key": "tooltip.shieldrpg.wicker_oval.skill.arrow_catcher"
+    }
+  ]
+}

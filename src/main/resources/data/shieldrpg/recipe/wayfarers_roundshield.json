@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "LCL",
+    "PPP",
+    " P "
+  ],
+  "key": {
+    "L": "minecraft:leather",
+    "C": "minecraft:compass",
+    "P": "#minecraft:planks"
+  },
+  "result": {
+    "id": "shieldrpg:wayfarers_roundshield",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:wayfarers_roundshield"
+    }
+  ]
+}

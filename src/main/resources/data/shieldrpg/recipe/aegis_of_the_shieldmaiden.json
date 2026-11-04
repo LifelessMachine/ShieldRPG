@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "DHD",
+    "NNN",
+    " N "
+  ],
+  "key": {
+    "D": "minecraft:diamond",
+    "H": "minecraft:heart_of_the_sea",
+    "N": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "id": "shieldrpg:aegis_of_the_shieldmaiden",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:aegis_of_the_shieldmaiden"
+    }
+  ]
+}

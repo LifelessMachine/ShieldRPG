@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "MIM",
+    "ICI",
+    " I "
+  ],
+  "key": {
+    "M": "minecraft:magma_cream",
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "shieldrpg:forge_twins_roundel",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:forge_twins_roundel"
+    }
+  ]
+}

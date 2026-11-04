@@ -1,0 +1,39 @@
+{
+  "item_id": "shieldrpg:sunburst_targe",
+  "name": "Sunburst Targe",
+  "name_gradient": [
+    "#9B59B6",
+    "#D7BDE2"
+  ],
+  "tier": "epic",
+  "lore_key": "tooltip.shieldrpg.sunburst_targe.lore.1",
+  "durability": 495,
+  "guard": {
+    "max_stability": 75,
+    "regen_per_second": 7.2,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 82,
+    "raised_move_speed": -0.15
+  },
+  "stats": {
+    "armor": 9
+  },
+  "skills": [
+    {
+      "trigger": "blocked_projectile",
+      "cooldown_ticks": 200,
+      "action": "shieldrpg:damage",
+      "target": "nearby",
+      "params": {
+        "amount": 8
+      },
+      "particle": {
+        "type": "minecraft:end_rod",
+        "count": 30,
+        "spread": 0.75,
+        "speed": 0.15
+      },
+      "text_key": "tooltip.shieldrpg.sunburst_targe.skill.shrapnel"
+    }
+  ]
+}

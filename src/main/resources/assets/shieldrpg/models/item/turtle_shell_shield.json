@@ -1,0 +1,6 @@
+{
+  "parent": "shieldrpg:item/template_shield",
+  "textures": {
+    "layer0": "shieldrpg:item/turtle_shell_shield"
+  }
+}

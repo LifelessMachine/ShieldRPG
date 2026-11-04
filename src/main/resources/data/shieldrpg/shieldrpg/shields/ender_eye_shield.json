@@ -1,0 +1,47 @@
+{
+  "item_id": "shieldrpg:ender_eye_shield",
+  "name": "Eye of Ender Shield",
+  "name_gradient": [
+    "#9B59B6",
+    "#D7BDE2"
+  ],
+  "tier": "epic",
+  "lore_key": "tooltip.shieldrpg.ender_eye_shield.lore.1",
+  "durability": 495,
+  "guard": {
+    "max_stability": 62,
+    "regen_per_second": 7.2,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 66
+  },
+  "stats": {
+    "armor": 7,
+    "max_health": 2
+  },
+  "skills": [
+    {
+      "trigger": "blocked_projectile",
+      "cooldown_ticks": 120,
+      "action": "shieldrpg:apply_effect",
+      "target": "attacker",
+      "max_range": 30,
+      "params": {
+        "effect": "minecraft:blindness",
+        "duration_ticks": 80,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:portal",
+        "count": 40,
+        "spread": 0.6,
+        "speed": 0.3
+      },
+      "sound": {
+        "id": "minecraft:entity.enderman.teleport",
+        "volume": 0.6,
+        "pitch": 1.2
+      },
+      "text_key": "tooltip.shieldrpg.ender_eye_shield.skill.evil_eye"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "item_id": "shieldrpg:wardens_greatshield",
+  "name": "Warden's Greatshield",
+  "name_gradient": [
+    "#F5B041",
+    "#FDEBD0"
+  ],
+  "tier": "legendary",
+  "lore_key": "tooltip.shieldrpg.wardens_greatshield.lore.1",
+  "durability": 720,
+  "guard": {
+    "max_stability": 154,
+    "regen_per_second": 5.6,
+    "hold_drain_per_second": 7,
+    "damage_reduction_percent": 90,
+    "projectile_damage_reduction_percent": 95,
+    "raised_move_speed": -0.25
+  },
+  "perfect_guard": {
+    "knockback": 1.0
+  },
+  "stats": {
+    "armor": 17,
+    "max_health": 8,
+    "knockback_resist": 0.4,
+    "move_speed": -0.1
+  },
+  "skills": [
+    {
+      "trigger": "shield_bash",
+      "cooldown_ticks": 60,
+      "steps": [
+        {
+          "action": "shieldrpg:damage",
+          "target": "attacker",
+          "params": {
+            "amount": 6,
+            "ignore_invulnerability": true
+          },
+          "particle": {
+            "type": "minecraft:sweep_attack",
+            "count": 3,
+            "spread": 0.8,
+            "speed": 0.0
+          }
+        },
+        {
+          "action": "shieldrpg:knockback",
+          "target": "attacker",
+          "params": {
+            "strength": 1.5
+          },
+          "particle": {
+            "type": "minecraft:cloud",
+            "count": 18,
+            "spread": 0.5,
+            "speed": 0.12
+          }
+        }
+      ],
+      "text_key": "tooltip.shieldrpg.wardens_greatshield.skill.crushing_bash"
+    },
+    {
+      "trigger": "guard_recovered",
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:resistance",
+        "duration_ticks": 100,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:happy_villager",
+        "count": 24,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "text_key": "tooltip.shieldrpg.wardens_greatshield.skill.stand_fast"
+    }
+  ]
+}

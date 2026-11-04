@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "BBB",
+    "BPB",
+    " P "
+  ],
+  "key": {
+    "B": "minecraft:slime_ball",
+    "P": "#minecraft:planks"
+  },
+  "result": {
+    "id": "shieldrpg:slime_bouncer",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:slime_bouncer"
+    }
+  ]
+}

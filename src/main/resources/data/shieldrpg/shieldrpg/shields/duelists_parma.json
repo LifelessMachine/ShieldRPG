@@ -1,0 +1,38 @@
+{
+  "item_id": "shieldrpg:duelists_parma",
+  "name": "Duelist's Parma",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.duelists_parma.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 38,
+    "regen_per_second": 9.6,
+    "hold_drain_per_second": 3,
+    "damage_reduction_percent": 58,
+    "raised_move_speed": 0.1
+  },
+  "stats": {
+    "armor": 4,
+    "move_speed": 0.03
+  },
+  "skills": [
+    {
+      "trigger": "shield_raised",
+      "cooldown_ticks": 200,
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:strength",
+        "duration_ticks": 60,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:crit",
+        "count": 15,
+        "spread": 0.5,
+        "speed": 0.05
+      },
+      "text_key": "tooltip.shieldrpg.duelists_parma.skill.battle_stance"
+    }
+  ]
+}

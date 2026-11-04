@@ -1,0 +1,41 @@
+{
+  "item_id": "shieldrpg:frostguard_pavise",
+  "name": "Frostguard Pavise",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.frostguard_pavise.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 72,
+    "regen_per_second": 6.4,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 78,
+    "projectile_damage_reduction_percent": 100,
+    "raised_move_speed": -0.15
+  },
+  "stats": {
+    "armor": 8,
+    "knockback_resist": 0.2,
+    "move_speed": -0.05
+  },
+  "skills": [
+    {
+      "trigger": "blocked_projectile",
+      "cooldown_ticks": 100,
+      "action": "shieldrpg:apply_effect",
+      "target": "attacker",
+      "max_range": 30,
+      "params": {
+        "effect": "minecraft:slowness",
+        "duration_ticks": 60,
+        "amplifier": 1
+      },
+      "particle": {
+        "type": "minecraft:snowflake",
+        "count": 30,
+        "spread": 0.6,
+        "speed": 0.05
+      },
+      "text_key": "tooltip.shieldrpg.frostguard_pavise.skill.chilling_return"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "item_id": "shieldrpg:wither_skull_buckler",
+  "name": "Wither Skull Buckler",
+  "name_gradient": [
+    "#9B59B6",
+    "#D7BDE2"
+  ],
+  "tier": "epic",
+  "lore_key": "tooltip.shieldrpg.wither_skull_buckler.lore.1",
+  "durability": 495,
+  "guard": {
+    "max_stability": 66,
+    "regen_per_second": 7.2,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 70
+  },
+  "stats": {
+    "armor": 8
+  },
+  "skills": [
+    {
+      "trigger": "blocked_melee",
+      "cooldown_ticks": 100,
+      "action": "shieldrpg:apply_effect",
+      "target": "attacker_melee",
+      "max_range": 5,
+      "params": {
+        "effect": "minecraft:wither",
+        "duration_ticks": 80,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:smoke",
+        "count": 24,
+        "spread": 0.5,
+        "speed": 0.05
+      },
+      "sound": {
+        "id": "minecraft:entity.wither.ambient",
+        "volume": 0.4,
+        "pitch": 1.4
+      },
+      "text_key": "tooltip.shieldrpg.wither_skull_buckler.skill.withering_gaze"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "item_id": "shieldrpg:aegis_of_the_shieldmaiden",
+  "name": "Aegis of the Shieldmaiden",
+  "name_gradient": [
+    "#F39C12",
+    "#F9E79F"
+  ],
+  "tier": "legendary",
+  "lore_key": "tooltip.shieldrpg.aegis_of_the_shieldmaiden.lore.1",
+  "durability": 720,
+  "guard": {
+    "max_stability": 144,
+    "regen_per_second": 10,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 90,
+    "raised_move_speed": -0.2
+  },
+  "perfect_guard": {
+    "knockback": 0.6
+  },
+  "stats": {
+    "armor": 16,
+    "max_health": 20
+  },
+  "skills": [
+    {
+      "trigger": "perfect_guard",
+      "action": "shieldrpg:heal",
+      "target": "self",
+      "cooldown_ticks": 160,
+      "params": {
+        "percent_max_health": 10
+      },
+      "particle": {
+        "type": "minecraft:happy_villager",
+        "count": 30,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "sound": {
+        "id": "minecraft:entity.experience_orb.pickup",
+        "volume": 1.0,
+        "pitch": 1.6
+      },
+      "text_key": "tooltip.shieldrpg.aegis_of_the_shieldmaiden.skill"
+    }
+  ]
+}

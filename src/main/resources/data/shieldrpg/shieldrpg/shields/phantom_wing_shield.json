@@ -1,0 +1,47 @@
+{
+  "item_id": "shieldrpg:phantom_wing_shield",
+  "name": "Phantom Wing Shield",
+  "name_gradient": [
+    "#9B59B6",
+    "#D7BDE2"
+  ],
+  "tier": "epic",
+  "lore_key": "tooltip.shieldrpg.phantom_wing_shield.lore.1",
+  "durability": 495,
+  "guard": {
+    "max_stability": 40,
+    "regen_per_second": 8.8,
+    "hold_drain_per_second": 3,
+    "damage_reduction_percent": 78,
+    "raised_move_speed": -0.08
+  },
+  "stats": {
+    "armor": 4,
+    "move_speed": 0.06
+  },
+  "skills": [
+    {
+      "trigger": "guard_break",
+      "cooldown_ticks": 600,
+      "action": "shieldrpg:apply_effect",
+      "target": "nearby",
+      "params": {
+        "effect": "minecraft:levitation",
+        "duration_ticks": 40,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:cloud",
+        "count": 30,
+        "spread": 0.6,
+        "speed": 0.1
+      },
+      "sound": {
+        "id": "minecraft:entity.phantom.flap",
+        "volume": 0.9,
+        "pitch": 1.0
+      },
+      "text_key": "tooltip.shieldrpg.phantom_wing_shield.skill.updraft"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "item_id": "shieldrpg:spearpoint_shield",
+  "name": "Spearpoint Shield",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.spearpoint_shield.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 52,
+    "regen_per_second": 8,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 64
+  },
+  "stats": {
+    "armor": 5
+  },
+  "skills": [
+    {
+      "trigger": "shield_bash",
+      "cooldown_ticks": 140,
+      "steps": [
+        {
+          "action": "shieldrpg:damage",
+          "target": "attacker",
+          "params": {
+            "amount": 4,
+            "ignore_invulnerability": true
+          },
+          "particle": {
+            "type": "minecraft:crit",
+            "count": 24,
+            "spread": 0.5,
+            "speed": 0.1
+          }
+        },
+        {
+          "action": "shieldrpg:apply_effect",
+          "target": "attacker",
+          "params": {
+            "effect": "minecraft:slowness",
+            "duration_ticks": 100,
+            "amplifier": 1
+          },
+          "particle": {
+            "type": "minecraft:smoke",
+            "count": 16,
+            "spread": 0.5,
+            "speed": 0.05
+          }
+        }
+      ],
+      "text_key": "tooltip.shieldrpg.spearpoint_shield.skill.hamstring"
+    }
+  ]
+}

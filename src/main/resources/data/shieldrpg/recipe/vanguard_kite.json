@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "WWW",
+    "IVI"
+  ],
+  "key": {
+    "W": "minecraft:red_wool",
+    "I": "minecraft:iron_ingot",
+    "V": [
+      "minecraft:shield",
+      "shieldrpg:standard_shield"
+    ]
+  },
+  "result": {
+    "id": "shieldrpg:vanguard_kite",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:vanguard_kite"
+    }
+  ]
+}

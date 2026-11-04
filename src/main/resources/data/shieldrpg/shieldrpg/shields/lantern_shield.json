@@ -1,0 +1,37 @@
+{
+  "item_id": "shieldrpg:lantern_shield",
+  "name": "Lantern Shield",
+  "tier": "common",
+  "lore_key": "tooltip.shieldrpg.lantern_shield.lore.1",
+  "durability": 238,
+  "guard": {
+    "max_stability": 42,
+    "regen_per_second": 8,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 58,
+    "raised_move_speed": 0.05
+  },
+  "stats": {
+    "armor": 4
+  },
+  "skills": [
+    {
+      "trigger": "shield_equipped",
+      "cooldown_ticks": 600,
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:night_vision",
+        "duration_ticks": 600,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:end_rod",
+        "count": 24,
+        "spread": 0.6,
+        "speed": 0.05
+      },
+      "text_key": "tooltip.shieldrpg.lantern_shield.skill.lantern_light"
+    }
+  ]
+}

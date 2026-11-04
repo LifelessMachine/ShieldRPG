@@ -1,0 +1,6 @@
+{
+  "parent": "shieldrpg:item/template_shield_blocking",
+  "textures": {
+    "layer0": "shieldrpg:item/forge_twins_roundel"
+  }
+}

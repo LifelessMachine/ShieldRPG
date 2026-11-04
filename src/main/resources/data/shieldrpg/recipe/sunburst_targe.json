@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "GDG",
+    "BIB",
+    "GDG"
+  ],
+  "key": {
+    "G": "minecraft:gold_ingot",
+    "D": "minecraft:diamond",
+    "B": "minecraft:glowstone_dust",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "shieldrpg:sunburst_targe",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:sunburst_targe"
+    }
+  ]
+}

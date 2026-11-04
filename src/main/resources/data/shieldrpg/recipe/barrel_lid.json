@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:barrel"
+  ],
+  "result": {
+    "id": "shieldrpg:barrel_lid",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:barrel_lid"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "item_id": "shieldrpg:cactus_buckler",
+  "name": "Cactus Buckler",
+  "tier": "common",
+  "lore_key": "tooltip.shieldrpg.cactus_buckler.lore.1",
+  "durability": 212,
+  "guard": {
+    "max_stability": 27,
+    "regen_per_second": 8.8,
+    "hold_drain_per_second": 3,
+    "damage_reduction_percent": 50,
+    "raised_move_speed": 0.15
+  },
+  "stats": {
+    "armor": 2,
+    "move_speed": 0.04
+  },
+  "skills": [
+    {
+      "trigger": "blocked_hit",
+      "cooldown_ticks": 80,
+      "action": "shieldrpg:damage",
+      "target": "nearby",
+      "params": {
+        "amount": 3
+      },
+      "particle": {
+        "type": "minecraft:damage_indicator",
+        "count": 14,
+        "spread": 0.5,
+        "speed": 0.1
+      },
+      "text_key": "tooltip.shieldrpg.cactus_buckler.skill.spiny_bloom"
+    }
+  ]
+}

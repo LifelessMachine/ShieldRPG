@@ -1,0 +1,36 @@
+{
+  "item_id": "shieldrpg:creeper_face",
+  "name": "Creeper Face",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.creeper_face.lore.1",
+  "durability": 370,
+  "guard": {
+    "max_stability": 44,
+    "regen_per_second": 8,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 60,
+    "raised_move_speed": 0.05
+  },
+  "stats": {
+    "armor": 4
+  },
+  "skills": [
+    {
+      "trigger": "perfect_guard",
+      "cooldown_ticks": 120,
+      "action": "shieldrpg:blast",
+      "target": "self",
+      "params": {
+        "radius": 4,
+        "amount": 15,
+        "strength": 1.6
+      },
+      "sound": {
+        "id": "minecraft:entity.generic.explode",
+        "volume": 0.9,
+        "pitch": 1.0
+      },
+      "text_key": "tooltip.shieldrpg.creeper_face.skill.sss_boom"
+    }
+  ]
+}

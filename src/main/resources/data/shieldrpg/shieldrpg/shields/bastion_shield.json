@@ -1,0 +1,36 @@
+{
+  "item_id": "shieldrpg:bastion_shield",
+  "name": "Bastion Shield",
+  "tier": "common",
+  "lore_key": "tooltip.shieldrpg.bastion_shield.lore.1",
+  "durability": 238,
+  "guard": {
+    "max_stability": 44,
+    "regen_per_second": 8,
+    "hold_drain_per_second": 4,
+    "damage_reduction_percent": 62
+  },
+  "stats": {
+    "armor": 4
+  },
+  "skills": [
+    {
+      "trigger": "blocked_melee",
+      "cooldown_ticks": 200,
+      "action": "shieldrpg:apply_effect",
+      "target": "attacker_melee",
+      "params": {
+        "effect": "minecraft:weakness",
+        "duration_ticks": 120,
+        "amplifier": 0
+      },
+      "particle": {
+        "type": "minecraft:smoke",
+        "count": 24,
+        "spread": 0.5,
+        "speed": 0.05
+      },
+      "text_key": "tooltip.shieldrpg.bastion_shield.skill.dull_blow"
+    }
+  ]
+}

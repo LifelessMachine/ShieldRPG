@@ -1,0 +1,42 @@
+{
+  "item_id": "shieldrpg:reservoir_bulwark",
+  "name": "Reservoir Bulwark",
+  "name_gradient": [
+    "#9B59B6",
+    "#D7BDE2"
+  ],
+  "tier": "epic",
+  "lore_key": "tooltip.shieldrpg.reservoir_bulwark.lore.1",
+  "durability": 495,
+  "guard": {
+    "max_stability": 97,
+    "regen_per_second": 7.6,
+    "hold_drain_per_second": 6,
+    "damage_reduction_percent": 75,
+    "raised_move_speed": -0.1
+  },
+  "stats": {
+    "armor": 10,
+    "max_health": 2
+  },
+  "skills": [
+    {
+      "trigger": "resource_exhausted",
+      "cooldown_ticks": 600,
+      "action": "shieldrpg:apply_effect",
+      "target": "self",
+      "params": {
+        "effect": "minecraft:absorption",
+        "duration_ticks": 200,
+        "amplifier": 1
+      },
+      "particle": {
+        "type": "minecraft:end_rod",
+        "count": 24,
+        "spread": 0.5,
+        "speed": 0.05
+      },
+      "text_key": "tooltip.shieldrpg.reservoir_bulwark.skill.last_reserve"
+    }
+  ]
+}

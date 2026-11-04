@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "DTD",
+    "GGG",
+    " G "
+  ],
+  "key": {
+    "D": "minecraft:diamond",
+    "T": "minecraft:totem_of_undying",
+    "G": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "shieldrpg:shieldmaidens_last_stand",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:shieldmaidens_last_stand"
+    }
+  ]
+}

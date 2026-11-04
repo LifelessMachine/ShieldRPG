@@ -1,0 +1,36 @@
+{
+  "item_id": "shieldrpg:thornback_scutum",
+  "name": "Thornback Scutum",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.thornback_scutum.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 64,
+    "regen_per_second": 7.2,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 72,
+    "raised_move_speed": -0.05
+  },
+  "stats": {
+    "armor": 7
+  },
+  "skills": [
+    {
+      "trigger": "blocked_melee",
+      "cooldown_ticks": 20,
+      "action": "shieldrpg:damage",
+      "target": "attacker_melee",
+      "max_range": 5,
+      "params": {
+        "amount": 3
+      },
+      "particle": {
+        "type": "minecraft:damage_indicator",
+        "count": 14,
+        "spread": 0.5,
+        "speed": 0.1
+      },
+      "text_key": "tooltip.shieldrpg.thornback_scutum.skill.thorns"
+    }
+  ]
+}

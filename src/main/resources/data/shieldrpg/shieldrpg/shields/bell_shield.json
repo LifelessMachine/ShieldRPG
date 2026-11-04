@@ -1,0 +1,38 @@
+{
+  "item_id": "shieldrpg:bell_shield",
+  "name": "Bell Shield",
+  "tier": "rare",
+  "lore_key": "tooltip.shieldrpg.bell_shield.lore.1",
+  "durability": 336,
+  "guard": {
+    "max_stability": 56,
+    "regen_per_second": 7.2,
+    "hold_drain_per_second": 5,
+    "damage_reduction_percent": 68,
+    "raised_move_speed": -0.05
+  },
+  "stats": {
+    "armor": 6
+  },
+  "skills": [
+    {
+      "trigger": "shield_raised",
+      "cooldown_ticks": 600,
+      "action": "shieldrpg:cleanse",
+      "target": "self",
+      "params": {},
+      "particle": {
+        "type": "minecraft:note",
+        "count": 24,
+        "spread": 0.75,
+        "speed": 0.1
+      },
+      "sound": {
+        "id": "minecraft:block.bell.use",
+        "volume": 1.0,
+        "pitch": 1.2
+      },
+      "text_key": "tooltip.shieldrpg.bell_shield.skill.clear_chime"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "FFF",
+    "LIL",
+    " L "
+  ],
+  "key": {
+    "F": "minecraft:feather",
+    "L": "minecraft:leather",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "shieldrpg:skirmisher_pelta",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "shieldrpg:crafting_enabled",
+      "shield": "shieldrpg:skirmisher_pelta"
+    }
+  ]
+}
